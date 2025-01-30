@@ -1,6 +1,8 @@
 package org.example.Seminars;
 
+import javax.xml.crypto.Data;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Sem1 {
@@ -89,6 +91,21 @@ public class Sem1 {
             numbers[i] = numbers[i - 1] + numbers[i - 2];
         }
         return numbers[numbers.length - 1];
+    }
+
+    public void getTimeRecursion(int number){
+        Date start = new Date();
+        fibo_rec(number);
+        Date end = new Date();
+        long time_rec = end.getTime() - start.getTime();
+
+        start = new Date();
+        fibo_line(number);
+        end = new Date();
+        long time_line = end.getTime() - start.getTime();
+
+        System.out.println("Время рекурсивной ф-цци: " + time_rec / 1000 + " cek");
+        System.out.println("Время линейной ф-цци: " + time_line / 1000 + " cek");
     }
 }
 

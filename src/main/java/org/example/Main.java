@@ -48,9 +48,9 @@ public class Main {
 //        System.out.println("Кол-во комбинаций вариант для пользовательского количества: " + sem1.combinations2(k, n));
         System.out.println("Задайте число");
         int num = Integer.parseInt(scanner.nextLine());
-        System.out.println("Фибоначчи числа " + num + " = " + sem1.fibo_rec(num));
-        System.out.println("Фибоначчи числа " + num + " = " + sem1.fibo_line(num));
-
+//        System.out.println("Фибоначчи числа " + num + " = " + sem1.fibo_rec(num));
+//        System.out.println("Фибоначчи числа " + num + " = " + sem1.fibo_line(num));
+        sem1.getTimeRecursion(num);
 
     }
 }
