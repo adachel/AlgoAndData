@@ -3,8 +3,11 @@ package org.example;
 import org.example.Lections.Lec1;
 import org.example.Lections.Lec2;
 import org.example.Seminars.Sem1;
+import org.example.Seminars.Sem2;
 
 import java.util.Arrays;
+import java.util.Date;
+import java.util.Random;
 import java.util.Scanner;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -54,19 +57,44 @@ public class Main {
 //        System.out.println("Фибоначчи числа " + num + " = " + sem1.fibo_line(num));
 //        sem1.getTimeRecursion(num);
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        Lec2 lec2 = new Lec2();
-        int[] myArray = new int[]{5, 3, 7, 1, 9, 2, 4, 6, 0, 8};
+//        Lec2 lec2 = new Lec2();
+//        int[] myArray = new int[]{5, 3, 7, 1, 9, 2, 4, 6, 0, 8};
 //        lec2.bubbleSort(myArray);
 //        lec2.directSort(myArray);
 //        lec2.insertSort(myArray);
 //        lec2.quickSort(myArray, 0, myArray.length - 1);
-        lec2.heapSort(myArray);
-        System.out.println(Arrays.toString(myArray));
-        System.out.println(lec2.binarySearch(myArray, 7, 0, myArray.length - 1));
+//        lec2.heapSort(myArray);
+//        System.out.println(Arrays.toString(myArray));
+//        System.out.println(lec2.binarySearch(myArray, 7, 0, myArray.length - 1));
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        Sem2 sem2 = new Sem2();
+//        int[] array1 = sem2.createArray(50000);
+//        System.out.println(Arrays.toString(array));
+//        System.out.println("-----------------------------------------------------------------------------------------");
+//        Date start_var1 = new Date();
+//        System.out.println(Arrays.toString(sem2.bubbleSortSimpleVar(array)));
+//        sem2.bubbleSortSimpleVar(array1);
+//        Date fin_var1 = new Date();
+//        System.out.println((fin_var1.getTime() - start_var1.getTime()) / 1000);
+//
+//        System.out.println();
+//
+//        int[] array2 = sem2.createArray(50000);
+//        Date start_var2 = new Date();
+//        System.out.println(Arrays.toString(sem2.bubbleSortTeacherVar(array2)));
+//        sem2.bubbleSortTeacherVar(array2);
+//        Date fin_var2 = new Date();
+//        System.out.println((fin_var2.getTime() - start_var2.getTime()) / 1000);
+//
+//        System.out.println();
 
-
-
-
-
+//        int[] array3 = sem2.createArray(50000000);
+//        Date start_var3 = new Date();
+//        System.out.println(Arrays.toString(sem2.quickSort(array3)));
+//        sem2.quickSort(array3);
+//        Date fin_var3 = new Date();
+//        System.out.println((fin_var3.getTime() - start_var3.getTime()) / 1000);
+//
+//        System.out.println(sem2.binarySearch(array3, 56));
     }
 }
