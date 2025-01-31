@@ -111,7 +111,7 @@ public class Lec2 {
     }
 
     // пирамидальная сортировка
-    public void heapSort(int[] array){
+    public void heapSort(int[] array){  // O(nlog(n))
         // построение кучи(перегруппируем массив)
         for (int i = array.length / 2 - 1; i >= 0 ; i--) {
             heapify(array, array.length, i);
@@ -143,7 +143,7 @@ public class Lec2 {
         }
 
         // если самый большой элемент не корень
-        if (leftChild != rootIndex){
+        if (largest != rootIndex){
             int temp = array[rootIndex];
             array[rootIndex] = array[largest];
             array[largest] = temp;
