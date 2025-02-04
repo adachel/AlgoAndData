@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.HomeWork.HW2Sem;
 import org.example.Lections.Lec1;
 import org.example.Lections.Lec2;
 import org.example.Seminars.Sem1;
@@ -23,6 +24,18 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 //        System.out.println("Задайте число");
 //        int num = Integer.parseInt(scanner.nextLine());
+
+   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        HW2Sem hw2Sem = new HW2Sem();
+        int[] tasks = {3, 1, 4, 2, 5};
+        long[] phoneNumbers = {9876543210L, 1234567890L, 5555555555L, 1000000000L};
+        // task 1
+//        System.out.println(Arrays.toString(hw2Sem.sortTasksByPriority(tasks)));
+
+        // task 2
+        System.out.println(Arrays.toString(hw2Sem.sortFoneNumbers(phoneNumbers)));
+
+
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //        Lec1 lec1 = new Lec1();
 //        System.out.println("Допустимые делители");
