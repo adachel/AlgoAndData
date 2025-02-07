@@ -1,6 +1,9 @@
 package org.example.HomeWork;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class HW2Sem {
     public HW2Sem() {
@@ -78,5 +81,46 @@ public class HW2Sem {
             countingSort(arr, exp);
 
         return arr;
+    }
+
+    // Задача3. Подсчёт количества букв в строке (CountingSort).
+    // Напишите функцию countLetters,
+    // которая подсчитывает количество каждой буквы в строке и выводит их по порядку алфавита.
+    // Функция должна игнорировать регистр букв.
+
+//    public void countLetters(String text) { // мой простой вариант
+//        String lowerText = text.toLowerCase();
+//        String words = "qwertyuiopasdfghjklzxcvbnmйцукенгшщзхъфывапролджэячсмитьбю";
+//        TreeMap<String, Integer> countChar = new TreeMap<>();
+//        for (char c : lowerText.toCharArray()){
+//            String ch = String.valueOf(c);
+//            if (words.contains(ch)){
+//                if (countChar.containsKey(ch)){
+//                    countChar.put(ch, countChar.get(ch) + 1);
+//                }else countChar.put(ch, 1);
+//            }
+//
+//        }
+//
+//        System.out.println(countChar);
+//    }
+
+    public void countLetters(String text) {
+        text = text.toLowerCase();
+        int[] count = new int[26];
+        for(char c: text.toCharArray()){
+            if(Character.isLetter(c)){
+                count[c - 'a']++;
+            }
+        }
+        Map<Character, Integer> letterCount = new TreeMap<>();
+        for(int i = 0; i < 26; i++){
+            if(count[i] > 0){
+                letterCount.put((char)(i + 'a'), count[i]);
+            }
+        }
+        for(Map.Entry<Character, Integer> entry : letterCount.entrySet()){
+            System.out.println(entry.getKey() + ":" + entry.getValue());
+        }
     }
 }

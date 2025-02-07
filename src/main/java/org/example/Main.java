@@ -29,11 +29,15 @@ public class Main {
         HW2Sem hw2Sem = new HW2Sem();
         int[] tasks = {3, 1, 4, 2, 5};
         long[] phoneNumbers = {9876543210L, 1234567890L, 5555555555L, 1000000000L};
+        String text =   "Hello World";
         // task 1
 //        System.out.println(Arrays.toString(hw2Sem.sortTasksByPriority(tasks)));
 
         // task 2
-        System.out.println(Arrays.toString(hw2Sem.sortFoneNumbers(phoneNumbers)));
+//        System.out.println(Arrays.toString(hw2Sem.sortFoneNumbers(phoneNumbers)));
+
+        // task 3
+        hw2Sem.countLetters(text);
 
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
