@@ -1,35 +1,91 @@
 package org.example;
 
-import org.example.HomeWork.HW2Sem;
-import org.example.Lections.Lec1;
-import org.example.Lections.Lec2;
-import org.example.Seminars.Sem1;
-import org.example.Seminars.Sem2;
+import org.example.Seminars.Sem3;
 
-import java.util.Arrays;
-import java.util.Date;
-import java.util.Random;
-import java.util.Scanner;
-import java.util.concurrent.atomic.AtomicInteger;
+import java.util.*;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-
-
-    // определить допустимый делитель для числа
-
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 //        System.out.println("Задайте число");
 //        int num = Integer.parseInt(scanner.nextLine());
 
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        Sem3 sem3 = new Sem3();
+        Sem3.List list = new Sem3.List();
+
+        for (int i = 1; i < 6; i++) {
+            list.pushFront(i);
+        }
+        System.out.println(list);
+
+        list.sortList(list);
+        System.out.println(list);
+
+//        list.popFront();
+//        list.popFront();
+//        list.popFront();
+//        list.popFront();
+//        System.out.println(list);
+
+//        for (int i = 1; i < 3; i++) {
+//            list.pushBack(i);
+//        }
+//        System.out.println(list);
+//
+//        list.popBack();
+//        System.out.println(list);
+//        list.popBack();
+//        System.out.println(list);
+//        list.popBack();
+//        System.out.println(list);
+//        list.popBack();
+//        System.out.println(list);
+
+//        Sem3.SinglyList list = new Sem3.SinglyList();
+//        for (int i = 1; i < 2; i++) {
+//            list.pushFront(i);
+//        }
+//        System.out.println(list);
+//
+//        boolean temp = true;
+//        while (temp){
+//            System.out.println("Удалить первый элемент? 'y' или любое нажатие");
+//            String ch = (scanner.nextLine());
+//            if (ch.equals("y")){
+//                list.popFront();
+//                System.out.println(list);
+//            }else temp = false;
+//        }
+//        System.out.println(list);
+//
+//        temp = true;
+//        while (temp){
+//            System.out.println("Задайте элемент, который нужно найти. Для выхода '-1'");
+//            num = Integer.parseInt(scanner.nextLine());
+//            if (num == -1){
+//                temp = false;
+//            }
+//            if (list.contains(num)){
+//                System.out.println("Элемент есть в списке");
+//            }else System.out.println("Такого элемента нет");
+//        }
+//
+//        System.out.println("Задайте элемент, который нужно добавить в конец списка");
+//        int num = Integer.parseInt(scanner.nextLine());
+//        list.pushBack(num);
+//        System.out.println(list);
+//
+//        list.popBack();
+//        System.out.println(list);
+
    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        HW2Sem hw2Sem = new HW2Sem();
-        int[] tasks = {3, 1, 4, 2, 5};
-        long[] phoneNumbers = {9876543210L, 1234567890L, 5555555555L, 1000000000L};
-        String text =   "Hello World";
+//        HW2Sem hw2Sem = new HW2Sem();
+//        int[] tasks = {3, 1, 4, 2, 5};
+//        long[] phoneNumbers = {9876543210L, 1234567890L, 5555555555L, 1000000000L};
+//        String text =   "Hello World";
         // task 1
 //        System.out.println(Arrays.toString(hw2Sem.sortTasksByPriority(tasks)));
 
@@ -37,7 +93,7 @@ public class Main {
 //        System.out.println(Arrays.toString(hw2Sem.sortFoneNumbers(phoneNumbers)));
 
         // task 3
-        hw2Sem.countLetters(text);
+//        hw2Sem.countLetters(text);
 
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -84,7 +140,7 @@ public class Main {
 //        System.out.println(Arrays.toString(myArray));
 //        System.out.println(lec2.binarySearch(myArray, 7, 0, myArray.length - 1));
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        Sem2 sem2 = new Sem2();
+//        Sem2 sem2 = new Sem2();
 //        int[] array1 = sem2.createArray(50000);
 //        System.out.println(Arrays.toString(array));
 //        System.out.println("-----------------------------------------------------------------------------------------");
