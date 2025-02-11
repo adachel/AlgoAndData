@@ -1,8 +1,11 @@
 package org.example;
 
-import org.example.Seminars.Sem3;
+import org.example.HomeWork.HW3sem;
 
 import java.util.*;
+
+import static org.example.HomeWork.HW3sem.SinglyList.MergeSortedLists.mergeTwoLists;
+import static org.example.HomeWork.HW3sem.SinglyList.MergeSortedLists.printList;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -13,16 +16,54 @@ public class Main {
 //        int num = Integer.parseInt(scanner.nextLine());
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        Sem3 sem3 = new Sem3();
-        Sem3.List list = new Sem3.List();
+    // HOMEWORK Seminar 3
+        HW3sem.SinglyList list1 = new HW3sem.SinglyList();
+        HW3sem.SinglyList list2 = new HW3sem.SinglyList();
+        HW3sem.SinglyList list = new HW3sem.SinglyList();
 
-        for (int i = 1; i < 6; i++) {
-            list.pushFront(i);
+        for (int i = 11; i > 0; i = i - 2) {
+                list1.addPush(i);
         }
-        System.out.println(list);
+        for (int i = 100; i > 12; i = i - 2) {
+            list2.addPush(i);
+        }
+        System.out.println(list1);
+        System.out.println(list2);
 
-        list.sortList(list);
-        System.out.println(list);
+        System.out.println(list.mergeTwoLists(list1, list2));
+
+        HW3sem.SinglyList.ListNode listNode1 = null;
+        HW3sem.SinglyList.ListNode listNode2 = null;
+        for (int i = 0; i < 9; i++) {
+            listNode1 = new HW3sem.SinglyList.ListNode(i);
+        }
+
+        for (int i = 0; i < 9; i++) {
+            listNode2 = new HW3sem.SinglyList.ListNode(i);
+        }
+
+        HW3sem.SinglyList.ListNode mergedList = mergeTwoLists(listNode1, listNode2);
+
+        System.out.println("MergedList:");
+        printList(mergedList);
+
+
+//        list1.removeDuplicates();
+//        System.out.println(list1);
+
+//        System.out.println(list1.findMiddle(list1));
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//        Sem3 sem3 = new Sem3();
+//        Sem3.List list = new Sem3.List();
+//
+//        for (int i = 1; i < 6; i++) {
+//            list.pushFront(i);
+//        }
+//        System.out.println(list);
+//
+//        list.sortList(list);
+//        System.out.println(list);
 
 //        list.popFront();
 //        list.popFront();
