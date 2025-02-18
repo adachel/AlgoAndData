@@ -1,6 +1,8 @@
 package org.example;
 
 import org.example.HomeWork.HW3sem;
+import org.example.HomeWork.HW4Sem;
+import org.example.Seminars.Sem4;
 
 import java.util.*;
 
@@ -15,37 +17,70 @@ public class Main {
 //        System.out.println("Задайте число");
 //        int num = Integer.parseInt(scanner.nextLine());
 
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////// ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+       // HOMEWORK4
+
+        HW4Sem.Tree tree = new HW4Sem.Tree();
+        tree.add(5);
+        tree.add(2);
+        tree.add(4);
+        tree.add(9);
+        tree.add(12);
+        tree.add(16);
+        tree.add(36);
+        tree.add(60);
+        tree.add(1);
+        tree.add(3);
+
+
+
+
+/// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//        // SEMINAR 4
+//        Sem4.HashMap map = new Sem4.HashMap();
+//        map.push(1, 2);
+//        map.push(3, 4);
+//        System.out.println(map.find(1));
+//        System.out.println(map.find(2));
+//
+//        System.out.println();
+//
+//        map.remove(1);
+//        System.out.println(map.find(1));
+//        System.out.println(map.find(2));
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // HOMEWORK Seminar 3
-        HW3sem.SinglyList list1 = new HW3sem.SinglyList();
-        HW3sem.SinglyList list2 = new HW3sem.SinglyList();
-        HW3sem.SinglyList list = new HW3sem.SinglyList();
-
-        for (int i = 11; i > 0; i = i - 2) {
-                list1.addPush(i);
-        }
-        for (int i = 100; i > 12; i = i - 2) {
-            list2.addPush(i);
-        }
-        System.out.println(list1);
-        System.out.println(list2);
-
-        System.out.println(list.mergeTwoLists(list1, list2));
-
-        HW3sem.SinglyList.ListNode listNode1 = null;
-        HW3sem.SinglyList.ListNode listNode2 = null;
-        for (int i = 0; i < 9; i++) {
-            listNode1 = new HW3sem.SinglyList.ListNode(i);
-        }
-
-        for (int i = 0; i < 9; i++) {
-            listNode2 = new HW3sem.SinglyList.ListNode(i);
-        }
-
-        HW3sem.SinglyList.ListNode mergedList = mergeTwoLists(listNode1, listNode2);
-
-        System.out.println("MergedList:");
-        printList(mergedList);
+//        HW3sem.SinglyList list1 = new HW3sem.SinglyList();
+//        HW3sem.SinglyList list2 = new HW3sem.SinglyList();
+//        HW3sem.SinglyList list = new HW3sem.SinglyList();
+//
+//        for (int i = 11; i > 0; i = i - 2) {
+//                list1.addPush(i);
+//        }
+//        for (int i = 100; i > 12; i = i - 2) {
+//            list2.addPush(i);
+//        }
+//        System.out.println(list1);
+//        System.out.println(list2);
+//
+//        System.out.println(list.mergeTwoLists(list1, list2));
+//
+//        HW3sem.SinglyList.ListNode listNode1 = null;
+//        HW3sem.SinglyList.ListNode listNode2 = null;
+//        for (int i = 0; i < 9; i++) {
+//            listNode1 = new HW3sem.SinglyList.ListNode(i);
+//        }
+//
+//        for (int i = 0; i < 9; i++) {
+//            listNode2 = new HW3sem.SinglyList.ListNode(i);
+//        }
+//
+//        HW3sem.SinglyList.ListNode mergedList = mergeTwoLists(listNode1, listNode2);
+//
+//        System.out.println("MergedList:");
+//        printList(mergedList);
 
 
 //        list1.removeDuplicates();
